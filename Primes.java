@@ -25,7 +25,7 @@ public class Primes {
 
 
     public static long[] getCumulativeSums() {
-        byte[] bytes = getFileBytes("Code\\half_gaps.bin");
+        byte[] bytes = getFileBytes("half_gaps.bin");
         int[] gaps = new int[bytes.length];
         long cumulativeSum = 0;
         long[] transformed = new long[bytes.length];

@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 public class Search{
     public static void main(String[] args) {
-        byte [] bytes= getFileBytes("C:\\Users\\symve\\Downloads\\half_gaps.bin");
+        byte [] bytes= getFileBytes("half_gaps.bin");
         long[] primes = new long[bytes.length + 2] ;
         primes[0] = 2;
         primes[1] = 3;
