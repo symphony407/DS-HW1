@@ -11,6 +11,7 @@ public class Primes {
         System.out.printf("%nTime taken: %.2f seconds%n", duration);
 
         System.out.print("First 15: ");
+        System.out.println("2 3");
         for (int i = 0; i < 15; i++) {
             System.out.print(primes[i] + " ");
         }
@@ -24,11 +25,11 @@ public class Primes {
     }
 
 
-    public static long[] getCumulativeSums() {
+    public static long[] getCumulativeSums() {//cumulative sum method
         byte[] bytes = getFileBytes("half_gaps.bin");
         int[] gaps = new int[bytes.length];
         long cumulativeSum = 0;
-        long[] transformed = new long[bytes.length];
+        long[] transformed = new long[bytes.length];//array to store values after cumulative sum is done
         for (int i = 0; i < bytes.length; i++) {
             gaps[i] = Byte.toUnsignedInt(bytes[i]);
             cumulativeSum += gaps[i];

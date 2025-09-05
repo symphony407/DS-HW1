@@ -10,7 +10,7 @@ public class Search{
         primes[0] = 2;
         primes[1] = 3;
         long sum = 0;
-       //look at for loop below
+       
         for (int i = 0; i < bytes.length; i++) {
         long gap = i < 2 ? Byte.toUnsignedLong(bytes[i]) : Byte.toUnsignedLong(bytes[i]);
         sum += gap;
