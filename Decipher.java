@@ -10,7 +10,7 @@ public class Decipher {
         char[] cipher = new char[ m ]; //creates a char array named cipher of length 128
         for(int i = 0; i < m; i++) { //loops from 0 to 127
             cipher[i] = (char) mod (55 * (i - 3) , m );//55*i+91 //fills the cipher array with the appropriate characters
-            String plain = read("Decipher\\cipher.txt");
+            String plain = read("cipher.txt");
              for (int j = 0; j < plain.length(); j++)
                      System.out.print(cipher[plain.charAt(j)]);
                 }
