@@ -23,8 +23,8 @@ package Code;
            }
         }
         long endTime = System.nanoTime();
-        double duration = (endTime-startTime)/1_000_000.0;
-        System.out.printf("%nSolve time: %.6f milliseconds%n", duration);
+        double duration = (endTime-startTime)/1_000_000_000.0;
+        System.out.printf("%nSolve time: %.6f seconds%n", duration);
 
     }
 }  
